@@ -7,21 +7,21 @@
 * [Node.js](https://nodejs.org/en/)
 * [Python](https://www.python.org/)
 
-## Setup
+# Setup
 ###### Install Dependencies
-1. Install Node.js
-1. Install Python
+* Install Node.js
+* Install Python
 ###### Clone the Repository
-1. `git clone https://github.com/Sturmpuls/electron-flask-template.git`
-1. `cd electron-flask-template`
+* `git clone https://github.com/Sturmpuls/electron-flask-template.git`
+* `cd electron-flask-template`
 ###### Install the dependencies for Electron from `package.json`
-1. `npm install`
+* `npm install`
 ###### Create a Python Virtual Environment
-1. `pip install virtualenv`
-1. `virtualenv env --copies --clear`
+* `pip install virtualenv`
+* `virtualenv env --copies --clear`
 ###### Install the dependencies for Flask from `requirements.txt` into the Virtual Environment
-1. `source env/Scripts/activate`
-1. `pip install -r requirements.txt`
+* `source env/Scripts/activate`
+* `pip install -r requirements.txt`
 
 # Run the Application
 Activate the Virtual Environment for Python `source env/Scripts/activate`
