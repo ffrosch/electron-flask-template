@@ -25,16 +25,16 @@
 
 # Run the Application
 Activate the Virtual Environment for Python `source env/Scripts/activate`
-## Start Electron + Flask
+###### Start Electron + Flask
 `npm start`
 
-## Start Flask
+###### Start Flask
 `flask run`
 
-## Compile Electron + Flask
+###### Compile Electron + Flask
 `npm package`
 
-## Compile Flask
+###### Compile Flask
 `npm package-python`
 
 ## Settings
