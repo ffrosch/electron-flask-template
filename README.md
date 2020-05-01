@@ -44,3 +44,5 @@ Activate the Virtual Environment for Python `source env/Scripts/activate`
 ###### Environment
 * /.flaskenv - can be used for development, will be committed.
 * /.env - should be used for production, will NOT be committed. Variables set here are used over those set in .flaskenv.
+###### Packaging
+The packaging for both flask and electron is configured in `package.json`.
