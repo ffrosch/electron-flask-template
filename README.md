@@ -20,15 +20,19 @@
 
 # Run the Application
 ## Start Electron + Flask
+`source env/Scripts/activate`
 `npm start`
 
 ## Start Flask
+`source env/Scripts/activate`
 `flask run`
 
 ## Compile Electron + Flask
+`source env/Scripts/activate`
 `npm package`
 
 ## Compile Flask
+`source env/Scripts/activate`
 `npm package-python`
 
 ## Settings
