@@ -1,3 +1,7 @@
+## Based on
+https://github.com/matbloch/electron-flask
+
+
 ## Configuration files
 files:
   config.py
