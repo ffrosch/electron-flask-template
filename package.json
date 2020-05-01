@@ -1,0 +1,51 @@
+{
+  "name": "electron-quick-start",
+  "productName": "ElectronFlaskApp",
+  "version": "1.0.0",
+  "description": "A functioning minimal Electron-Flask application template",
+  "main": "client/main.js",
+  "scripts": {
+    "start": "electron-forge start",
+    "make": "electron-forge make",
+    "publish": "electron-forge publish",
+    "package": "npm run -s package-precleanup && npm run -s package-python && npm run -s package-electron && npm run -s package-cleanup",
+    "package-precleanup": "rm -rf dist && mkdir dist",
+    "package-electron": "electron-forge package",
+    "package-python": "pyinstaller --hidden-import=pkg_resources.py2_warn --add-data app/templates;templates --add-data app/static;static --distpath dist  app/app.py -y",
+    "package-cleanup": "rm -rf build && mv out/ElectronFlaskApp-win32-x64 dist && rm -rf out && rm -rf app/__pycache__ && rm app.spec",
+    "lint": "echo \"No linting configured\""
+  },
+  "repository": "https://github.com/sturmpuls/electron-flask-template",
+  "keywords": [
+    "Electron",
+    "Flask",
+    "template"
+  ],
+  "author": {
+    "name": "Flo",
+    "email": ""
+  },
+  "license": "MIT",
+  "config": {
+    "forge": {
+      "packagerConfig": {},
+      "makers": [
+        {
+          "name": "@electron-forge/maker-zip"
+        }
+      ]
+    }
+  },
+  "devDependencies": {
+    "@electron-forge/cli": "^6.0.0-beta.50",
+    "@electron-forge/maker-deb": "^6.0.0-beta.50",
+    "@electron-forge/maker-rpm": "^6.0.0-beta.50",
+    "@electron-forge/maker-squirrel": "^6.0.0-beta.50",
+    "@electron-forge/maker-zip": "^6.0.0-beta.50",
+    "electron": "8.2.3"
+  },
+  "dependencies": {
+    "electron-squirrel-startup": "^1.0.0",
+    "ps-tree": "^1.2.0"
+  }
+}

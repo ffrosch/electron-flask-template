@@ -1,0 +1,34 @@
+### Files in this section must absolutly not be commited ###
+
+# production files
+.env
+config_local.py
+
+
+### Keeping the repo clean ###
+
+# compiled app
+dist/
+
+# Dependency directories
+env/
+node_modules/
+
+# Compiled Python files
+*.py[cod]
+
+# logs
+logs
+*.log
+npm-debug.log*
+
+# Runtime data
+*.pid
+*.seed
+*.pid.lock
+package-lock.json
+
+# Temporary directories
+app/__pycache__
+build/
+out/

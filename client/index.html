@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <!-- https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP -->
+<!--     <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'">
+    <meta http-equiv="X-Content-Security-Policy" content="default-src 'self'; script-src 'self'"> -->
+    <script src="./vendor/spin/spin.min-2.3.2.js"></script>
+    <script src="./renderer.js"></script>
+    <title>Electron App</title>
+  </head>
+  <body>
+    <center>
+      <h1>Hello World!</h1>
+      We are using Node.js <span id="node-version"></span>,
+      Chromium <span id="chrome-version"></span>,
+      and Electron <span id="electron-version"></span>.
+    
+    <div>
+    <h2>Please wait for the Python Application to load</h2>
+      <div id="spinner"></div>
+    </div>
+    
+    <script>
+      let opts = {
+       lines: 13,
+       length: 8,
+       width: 14,
+       radius: 42,
+       scale: 1,
+       corners: 1,
+       color: '#000',
+       opacity: 0.25,
+       rotate: 0,
+       direction: 1,
+       speed: 1,
+       trail: 60,
+       fps: 20,
+       zIndex: 2e9,
+       className: 'spinner',
+       top: '50%',
+       left: '50%',
+       shadow: false,
+       hwaccel: false,
+       position: 'absolute',
+      },
+       target = document.getElementById('spinner'),
+       spinner = new Spinner(opts).spin(target);
+    </script>
+    
+    </center>
+  </body>
+ </html>
