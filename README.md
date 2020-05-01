@@ -1,5 +1,5 @@
 # A template to easily deploy flask apps with Electron
-### Electron Startup Screen
+#### Electron Startup Screen
 ![Electron Startup Screen](/docs/img/Electron-Startup-Screen.jpg)
 
 #### Electron Window after Flask is initialized
