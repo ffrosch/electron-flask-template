@@ -1,4 +1,5 @@
 # A template to easily deploy flask apps with Electron
+![Electron Startup Screen](/docs/img/Electron-Startup-Screen.jpg)
 
 ## Resources
 * based on [electron-flask](https://github.com/matbloch/electron-flask)
