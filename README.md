@@ -1,7 +1,9 @@
 # A template to easily deploy flask apps with Electron
 ![Electron Startup Screen](/docs/img/Electron-Startup-Screen.jpg)
+Electron Startup Screen
 
 ![Electron Window after Flask is initialized](/docs/img/Electron-Flask-Window.jpg)
+Electron Window after Flask is initialized
 
 ## Resources
 * based on [electron-flask](https://github.com/matbloch/electron-flask)
